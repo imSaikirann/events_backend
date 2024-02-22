@@ -52,6 +52,10 @@ app.post('/generateUniqueNumber', (req, res) => {
   res.json({ uniqueNumber, email: data.email });
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 app.listen(4000, () => {
   console.log('Server started  http://localhost:4000');
   console.log('Server Started!');
